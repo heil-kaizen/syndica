@@ -1,0 +1,5 @@
+{
+  "name": "Syndica",
+  "description": "Identify repeat smart money wallets across Solana tokens using holder overlap analysis and market cap tracking. Discover hidden trading circles, whale behavior, and high-probability wallets without scanning transactions.",
+  "requestFramePermissions": []
+}

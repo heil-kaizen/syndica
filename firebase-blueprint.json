@@ -1,0 +1,65 @@
+{
+  "entities": {
+    "TokenSnapshot": {
+      "title": "Token Snapshot",
+      "description": "A snapshot of a token's top holders and market cap.",
+      "type": "object",
+      "properties": {
+        "mcap": { "type": "number", "description": "Market cap at snapshot time" },
+        "price": { "type": "number", "description": "Price at snapshot time" },
+        "timestamp": { "type": "string", "format": "date-time", "description": "Time of snapshot" },
+        "symbol": { "type": "string", "description": "Token symbol" },
+        "name": { "type": "string", "description": "Token name" },
+        "holders": {
+          "type": "array",
+          "description": "List of top holders",
+          "items": {
+            "type": "object",
+            "properties": {
+              "wallet": { "type": "string" },
+              "balance": { "type": "number" },
+              "percentage": { "type": "number" },
+              "rank": { "type": "number" }
+            },
+            "required": ["wallet", "balance", "rank"]
+          }
+        }
+      },
+      "required": ["mcap", "price", "timestamp", "holders"]
+    },
+    "WalletIndex": {
+      "title": "Wallet Index",
+      "description": "Index of a wallet's appearances across tokens.",
+      "type": "object",
+      "properties": {
+        "overlapCount": { "type": "number", "description": "Number of tokens this wallet appears in" },
+        "score": { "type": "number", "description": "Calculated FnF score" },
+        "tokens": {
+          "type": "array",
+          "description": "List of tokens this wallet was found in",
+          "items": {
+            "type": "object",
+            "properties": {
+              "token": { "type": "string" },
+              "mcap": { "type": "number" },
+              "rank": { "type": "number" },
+              "timestamp": { "type": "string", "format": "date-time" }
+            },
+            "required": ["token", "mcap", "rank", "timestamp"]
+          }
+        }
+      },
+      "required": ["overlapCount", "score", "tokens"]
+    }
+  },
+  "firestore": {
+    "/tokens/{tokenId}": {
+      "schema": { "$ref": "#/entities/TokenSnapshot" },
+      "description": "Snapshots of tokens"
+    },
+    "/wallet_index/{walletId}": {
+      "schema": { "$ref": "#/entities/WalletIndex" },
+      "description": "Index of wallets and their token overlaps"
+    }
+  }
+}
