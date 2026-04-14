@@ -330,7 +330,8 @@ export default function App() {
       <footer className="border-t border-ink mt-20 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-6">
           <div className="flex flex-wrap justify-center gap-8 text-xs font-mono font-bold tracking-widest uppercase text-ink-light">
-            <button onClick={() => setActiveModal('tos')} title="Legal agreement regarding the use of analytics data, data privacy, and usage limits." className="hover:text-blood transition-colors uppercase">Terms of Service</button>
+            <a href="/terms.html" target="_blank" rel="noopener noreferrer" title="Legal agreement regarding the use of analytics data, data privacy, and usage limits." className="hover:text-blood transition-colors uppercase">Terms of Service</a>
+            <a href="/privacy.html" target="_blank" rel="noopener noreferrer" title="Information on how we collect, use, and protect your data." className="hover:text-blood transition-colors uppercase">Privacy Policy</a>
             <button onClick={() => setActiveModal('archive')} title="Library of all past token analyses and historical wallet snapshots." className="hover:text-blood transition-colors uppercase">The Archive</button>
             <button onClick={() => setActiveModal('news')} title="Changelog, project updates, new feature releases, and market reports." className="hover:text-blood transition-colors uppercase">Dispatch News</button>
             <a href="https://github.com/heil-kaizen" target="_blank" rel="noopener noreferrer" title="Report data inaccuracies, request features, or seek technical help." className="hover:text-blood transition-colors uppercase">Contact Editor</a>
