@@ -1,6 +1,6 @@
 # HAWKINS (Wallet Gazette)
 
-![HAWKINS](https://github.com/heil-kaizen/syndica/blob/main/hawkins.webp?raw=true)
+![HAWKINS](https://raw.githubusercontent.com/heil-kaizen/hawkin/main/hawkins.webp)
 
 HAWKINS is a classified investigation tool designed to uncover hidden alpha on the Solana blockchain. By analyzing overlapping holders across multiple tokens, investigators can track repeat whales, expose sybil clusters, and find the wallets that matter before the crowd does.
 
