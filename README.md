@@ -1,8 +1,8 @@
-# Syndica (Wallet Gazette)
+# HAWKINS (Wallet Gazette)
 
-![Syndica](https://raw.githubusercontent.com/heil-kaizen/syndica/main/syndica.webp)
+![HAWKINS](https://github.com/heil-kaizen/syndica/blob/main/hawkins.webp?raw=true)
 
-Syndica is a classified investigation tool designed to uncover hidden alpha on the Solana blockchain. By analyzing overlapping holders across multiple tokens, investigators can track repeat whales, expose sybil clusters, and find the wallets that matter before the crowd does.
+HAWKINS is a classified investigation tool designed to uncover hidden alpha on the Solana blockchain. By analyzing overlapping holders across multiple tokens, investigators can track repeat whales, expose sybil clusters, and find the wallets that matter before the crowd does.
 
 ## Features
 
@@ -19,7 +19,7 @@ Syndica is a classified investigation tool designed to uncover hidden alpha on t
 ```text
 +-------------------+       +-------------------+       +-------------------+
 |                   |       |                   |       |                   |
-| Solana Tracker API+------>+      Syndica      +<------+ Solana Tracker API|
+| Solana Tracker API+------>+      HAWKINS      +<------+ Solana Tracker API|
 |  (Top Holders)    |       |   (Core Engine)   |       | (MCAP & Price)    |
 |                   |       |                   |       |                   |
 +-------------------+       +---------+---------+       +-------------------+
